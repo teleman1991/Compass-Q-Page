@@ -4,7 +4,7 @@ This repository contains the web frontend for interacting with a chatbot created
 
 ## Features
 
-- Simple, clean design using Compass Datacenters' brand colors
+- Simple, clean design using Compass Datacenters' brand colors 
 - Chat window to display conversation history
 - Input field to send new messages to the chatbot
 - Integration with Python chatbot backend (to be implemented)
@@ -12,13 +12,13 @@ This repository contains the web frontend for interacting with a chatbot created
 ## Technologies Used
 
 - HTML
-- CSS
+- CSS 
 - JavaScript
 - Python (for chatbot backend)
 
 ## Setup
 
-1. Clone the repository
+1. Clone the repository 
 2. Open `index.html` in a web browser
 3. The chatbot UI will load, and you can start sending messages
 
@@ -28,7 +28,7 @@ Note: The chatbot backend integration is not yet implemented. Currently, the cha
 
 - [ ] Implement API call to Python chatbot backend
 - [ ] Differentiate styling for user vs chatbot messages
-- [ ] Add loading indicator while awaiting chatbot response
+- [ ] Add loading indicator while awaiting chatbot response  
 - [ ] Implement input validation on user message
 
 Feel free to submit pull requests or open issues for any bugs, improvements, or feature requests!
