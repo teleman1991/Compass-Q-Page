@@ -1,1 +1,34 @@
-IyBDb21wYXNzIFEgQ2hhdGJvdAoKVGhpcyByZXBvc2l0b3J5IGNvbnRhaW5zIHRoZSB3ZWIgZnJvbnRlbmQgZm9yIGludGVyYWN0aW5nIHdpdGggYSBjaGF0Ym90IGNyZWF0ZWQgZm9yIENvbXBhc3MgRGF0YWNlbnRlcnMuIFRoZSBjaGF0Ym90IGJhY2tlbmQgaXMgaW1wbGVtZW50ZWQgaW4gUHl0aG9uLCB3aGlsZSB0aGlzIGZyb250ZW5kIHByb3ZpZGVzIGEgdXNlciBpbnRlcmZhY2UgdG8gc2VuZCBtZXNzYWdlcyBhbmQgdmlldyByZXNwb25zZXMuCgojIyBGZWF0dXJlcwoKLSBTaW1wbGUsIGNsZWFuIGRlc2lnbiB1c2luZyBDb21wYXNzIERhdGFjZW50ZXJzJyBicmFuZCBjb2xvcnMgCi0gQ2hhdCB3aW5kb3cgdG8gZGlzcGxheSBjb252ZXJzYXRpb24gaGlzdG9yeQotIElucHV0IGZpZWxkIHRvIHNlbmQgbmV3IG1lc3NhZ2VzIHRvIHRoZSBjaGF0Ym90Ci0gSW50ZWdyYXRpb24gd2l0aCBQeXRob24gY2hhdGJvdCBiYWNrZW5kICh0byBiZSBpbXBsZW1lbnRlZCkKCiMjIFRlY2hub2xvZ2llcyBVc2VkCgotIEhUTUwKLSBDU1MgCi0gSmF2YVNjcmlwdAotIFB5dGhvbiAoZm9yIGNoYXRib3QgYmFja2VuZCkKCiMjIFNldHVwCgoxLiBDbG9uZSB0aGUgcmVwb3NpdG9yeSAKMi4gT3BlbiBgaW5kZXguaHRtbGAgaW4gYSB3ZWIgYnJvd3NlcgozLiBUaGUgY2hhdGJvdCBVSSB3aWxsIGxvYWQsIGFuZCB5b3UgY2FuIHN0YXJ0IHNlbmRpbmcgbWVzc2FnZXMKCk5vdGU6IFRoZSBjaGF0Ym90IGJhY2tlbmQgaW50ZWdyYXRpb24gaXMgbm90IHlldCBpbXBsZW1lbnRlZC4gQ3VycmVudGx5LCB0aGUgY2hhdGJvdCB3aWxsIGRpc3BsYXkgYSBwbGFjZWhvbGRlciByZXNwb25zZS4gQ2hlY2sgYmFjayBmb3IgdXBkYXRlcyBzb29uIQoKIyMgUm9hZG1hcAoKLSBbIF0gSW1wbGVtZW50IEFQSSB0byBQeXRob24gY2hhdGJvdCBiYWNrZW5kCi0gWyBdIERpZmZlcmVudGlhdGUgc3R5bGluZyBmb3IgdXNlciB2cyBjaGF0Ym90IG1lc3NhZ2VzCi0gWyBdIEFkZCBsb2FkaW5nIGluZGljYXRvciB3aGlsZSBhd2FpdGluZyBjaGF0Ym90IHJlc3BvbnNlICAKLSBbIF0gSW1wbGVtZW50IGlucHV0IHZhbGlkYXRpb24gb24gdXNlciBtZXNzYWdlCgpGZWVsIGZyZWUgdG8gc3VibWl0IHB1bGwgcmVxdWVzdHMgb3Igb3BlbiBpc3N1ZXMgZm9yIGFueSBidWdzLCBpbXByb3ZlbWVudHMsIG9yIGZlYXR1cmUgcmVxdWVzdHMh
+# Compass Q Chatbot
+
+This repository contains the web frontend for interacting with a chatbot created for Compass Datacenters. The chatbot backend is implemented in Python, while this frontend provides a user interface to send messages and view responses.
+
+## Features
+
+- Simple, clean design using Compass Datacenters' brand colors
+- Chat window to display conversation history
+- Input field to send new messages to the chatbot
+- Integration with Python chatbot backend (to be implemented)
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Python (for chatbot backend)
+
+## Setup
+
+1. Clone the repository
+2. Open `index.html` in a web browser
+3. The chatbot UI will load, and you can start sending messages
+
+Note: The chatbot backend integration is not yet implemented. Currently, the chatbot will display a placeholder response. Check back for updates soon!
+
+## Roadmap
+
+- [ ] Implement API call to Python chatbot backend
+- [ ] Differentiate styling for user vs chatbot messages
+- [ ] Add loading indicator while awaiting chatbot response
+- [ ] Implement input validation on user message
+
+Feel free to submit pull requests or open issues for any bugs, improvements, or feature requests!
