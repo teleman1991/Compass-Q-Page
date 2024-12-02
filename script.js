@@ -8,20 +8,33 @@ document.getElementById('chatForm').addEventListener('submit', function(e) {
     if (message !== '') {
         displayMessage(message, 'user');
         
-        // Placeholder for loading indicator 
-        displayMessage('Typing...', 'bot');
+        // Show loading indicator 
+        var loadingMessage = displayMessage('Typing...', 'bot');
 
-        // Simulated delay for bot response
-        setTimeout(() => {
-            // Remove "Typing..." message
-            var messages = document.getElementById('chatMessages');
-            messages.removeChild(messages.lastChild);
-
-            // Here is where you would call your Python chatbot backend
-            // and pass it the user's message, then display the bot's response
-            var botResponse = 'This is where the bot response will go';
+        fetch('https://ddff4771d6ee39b2da.gradio.live/api/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ data: [message] }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            var botResponse = data.data[0];
+            
+            // Remove loading message
+            loadingMessage.remove();
+            
             displayMessage(botResponse, 'bot');
-        }, 1000);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            
+            // Remove loading message
+            loadingMessage.remove();
+            
+            displayMessage('Oops! Something went wrong.', 'bot');
+        });
     }
 });
 
@@ -35,4 +48,6 @@ function displayMessage(message, sender) {
     
     chatMessages.appendChild(messageElement);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+    
+    return messageElement;
 }
